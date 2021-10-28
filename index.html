@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acá se pone nombre de pestaña</title>
+</head>
+<body>
+  <header>Cabecera: Menú de secciones de la página
+    Pero también puede ir en cada sección de la página
+     y así se entiende que es la cabecera del elemento que lo contiene</header>
+  <nav>Ésto agrupa enlaces. Pero no sé cómo funciona todavía</nav>
+  <h1>Ésto es un título muy importante</h1>
+  <p>Ésto es un párrafo. <br> Html es un lenguaje de etiquetas. Las etiquetas se abren y se cierran.<br> 
+  Las etiquetas tienen atributos que aparecen en la primera parte de la etiqueta (en un enlace "a href=" <br>
+  va al comienzo). <t style=background-color:red>Ésta parte por ejemplo tiene background color rojo</t> <t style="color:red"> y ésta tiene la fuente roja.</t> <t style="background-color: red; color:white">Éste, por otro lado, tiene fondo rojo y fuente blanca</t>. El navegador lee el html línea por línea. </p>
+  <h2>Ésto es un título importante</h2>
+  <p>Lorem Ipsum. Mucho texto, pero con br se hace un punto aparte <br>
+    Why do we use it?<br>
+    Lo usamos para que el texto sea más entendible. Además, con hr se hace una línea divisoria de contenido. 
+    <strong>Ésto es negrita. </strong> <b>Ésto también.</b><cite> Ésto es itálica.</cite> <small>Ésto es lo mismo pero más chiquitito. </small>
+    <hr>
+    </p>
+  <h3>Ésto es un título común</h3>
+  <ul>
+  <h4>Lísta no ordenada</h4>
+    <!-- Ésto es un comentario en el código -->
+    <li>Lista</li>
+    <li>no</li>
+    <li>ordenada</li>
+  </ul>
+  <ol>
+  <h4>Lista ordenada</h4>
+      <li>Despierta</li>
+      <li>Vive</li>
+      <li>Duerme</li>
+    </ol>
+  <d1>
+    <h4>Lista de definiciones</h4>
+    <dt>Nombre definición</dt><dd>Definición de la cosa a definir</dd>
+    <dt>Nombre definición 2</dt><dd>Definición de la cosa 2 a definir</dd>
+  </d1>
+  <ul><h4>Lista desordenada que contiene listas</h4>
+    <li>Ésta no contiene lista interna</li>
+    <li>Ésta sí contiene lista interna: <ol>
+      <li>Cosa 1</li>
+      <li>Cosa 2</li>
+      <li>Cosa 3</li>
+    </ol></li>
+    <li>Ésta de nuevo no contiene lista interna</li>
+  </ul>
+  <h4 id=links>Ésto ya casi no es un título</h4>
+  <p>Con a +tab hacemos que cree para hacer un link</p>
+  <a href="http://google.com">Ésto es un link a google</a><br>
+  <a href="http://google.com" target="_new">Éste link abre google en una nueva pestaña. También funciona con _blank </a><br>
+  <a href="index 2.html">Ésto lleva a una página de otro archivo .html de la carpeta</a> ><br>
+  <a href="#calculadora">Ir a la calculadora (mismo sitio dentro de la página)</a>
+  <hr>
+  <h4>Ésto es un formulario</h4>
+  <form action="#">
+    Usuario: <input type="text"> <br>
+    Fecha de Nacimeinto <input type="date"> <br>
+    Correo electrónico <input type="email" name="correo" size="40"> <br>
+    Dirección <input type="address"> <br>
+
+    Contraseña: <input type="password"><br>
+    <input type="submit" value="Enviar"> <input type="reset" value="Borrar">
+    <button>El profe usa éste en vez de input+submit</button>
+
+  </form>
+  <h4>Tablas</h4>
+  <table border="1">
+    <caption>Título de la tabla</caption> 
+    <thead>
+      <tr bgcolor="#e1bdff">
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+        <th>Columna 4</th>
+      </tr>
+    </thead>
+    <tbody bgcolor="#ae51ae">
+      <td>Columna 1</td>
+      <td>Columna 2</td>
+      <td>Columna 3</td>
+      <td>Columna 4</td>
+      <tr bgcolor="#e1bdff">
+        <th>Contenido 1.1</th>
+        <th>Contenido 1.2</th>
+        <th>Contenido 1.3</th>
+        <th>Contenido 1.4</th>
+      </tr>
+      <tr>
+        <th>Contenido 2.1</th>
+        <th>Contenido 2.2</th>
+        <th bgcolor="#e1bdff">Contenido 2.3</th>
+        <th>Contenido 2.4</th>
+      </tr>
+      <tr>
+        <th>Contenido 3.1</th>
+        <th>Contenido 3.2</th>
+        <th>Contenido 3.3</th>
+        <th>Contenido 3.4</th>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+  <!-- Calculadora Inicio-->
+  <a href="#links">Ir a los links</a>
+  <form name="calculator">
+  <h3 id=calculadora>Calculadora <br>
+  <input type="textfield" name="ans" value="">
+  <br>
+  <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+  <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+  <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+  <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+  <br>
+  <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+  <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+  <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+  <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+  <br>
+  <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+  <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+  <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+  <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+  <br>
+  <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+  <input type="reset" value="c">
+  <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+  <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+  </form>
+  <!-- Calculadora Fin -->
+</body>
+</html>
