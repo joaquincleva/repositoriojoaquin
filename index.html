@@ -5,28 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="redfacebook.png">
   <title>Acá se pone nombre de pestaña</title>
 </head>
 <body>
   <header>Cabecera: Menú de secciones de la página
     Pero también puede ir en cada sección de la página
      y así se entiende que es la cabecera del elemento que lo contiene</header>
-  <nav>Ésto agrupa enlaces. Pero no sé cómo funciona todavía</nav>
-  <h1>Ésto es un título muy importante</h1>
+     <nav>
+      <p>
+        <a href="../index.html"><img src="../varios/iconos/icono-html.svg" alt="Home" title="Ir a página de inicio" width="42" height="48"></a>
+        <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36"></a>
+      </p>
+  
+      <div class="toc">
+        <h2>Secciones</h2>
+  
+        <ul>
+          <li><a href="#TítuloMuyImportante">Título Principal</a></li>
+          <li><a href="#TítuloImportante">Título Importante</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#etiqueta-section">Sección <span class="html-eti">&lt;section&gt;</span></a></li>
+          <li><a href="#etiqueta-article">Artículo <span class="html-eti">&lt;article&gt;</span></a></li>
+          <li><a href="#etiqueta-hn">Títulos <span class="html-eti">&lt;h1&gt; ...&lt;h6&gt;</span></a></li>
+          <li><a href="#etiqueta-aside">Lateral <span class="html-eti">&lt;aside&gt;</span></a></li>
+          <li><a href="#etiqueta-footer">Pie <span class="html-eti">&lt;footer&gt;</span></a></li>
+          <li><a href="#etiqueta-address">Dirección <span class="html-eti">&lt;address&gt;</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  <h1 id=TítuloMuyImportante>Ésto es un título muy importante</h1>
   <p>Ésto es un párrafo. <br> Html es un lenguaje de etiquetas. Las etiquetas se abren y se cierran.<br> 
   Las etiquetas tienen atributos que aparecen en la primera parte de la etiqueta (en un enlace "a href=" <br>
   va al comienzo).</p>
-  <h2>Ésto es un título importante</h2>
+  <h2 id=TítuloImportante>Ésto es un título importante</h2>
   <p>Lorem Ipsum. Mucho texto, pero con br se hace un punto aparte <br>
     Why do we use it?<br>
     Lo usamos para que el texto sea más entendible. Además, con hr se hace una línea divisoria de contenido. 
-    <strong>Ésto es negrita. </strong> <b>Ésto también.</b><cite> Ésto es itálica.</cite> <small>Ésto es lo mismo pero más chiquitito. </small>
+    <b>Ésto es negrita. </b> <strong>Ésto también es negrita pero para llamar la atención.</strong><cite> Ésto es itálica.</cite><em>Ésto también es itálica pero para llamar la atención.</em> <small>Ésto es lo común pero más chiquitito. </small>
     <hr>
     </p>
   <h3>Ésto es un título común</h3>
   <ul>
-  <h4>Lísta no ordenada</h4>
-    <!-- Ésto es un comentario en el código -->
+  <h4 id=listas>Lísta no ordenada</h4>
+    <!--Ésto es un comentario en el código-->
+    <!-- Ésto también es un comentario en el código -->
     <li>Lista</li>
     <li>no</li>
     <li>ordenada</li>
@@ -51,10 +75,10 @@
     </ol></li>
     <li>Ésta de nuevo no contiene lista interna</li>
   </ul>
-  <h4 id=links>Ésto ya casi no es un título</h4>
+  <h4>Ésto ya casi no es un título</h4>
   <h4 class="estilo-propio"> Éste ya casi no título tiene una clase de estilo propia</h4>
-  <p>Con a +tab hacemos que cree para hacer un link</p>
-  <a href="http://google.com">Ésto es un link a google</a><br>
+  <p id=links>Con a +tab hacemos que cree para hacer un link</p>
+  <a href="http://google.com"><img src="redgoogle.png" alt="Estrella PNG" title="Ir a Google Rojo">Ésto es un link a google rojo</a><br>
   <a href="http://google.com" target="_new">Éste link abre google en una nueva pestaña. También funciona con _blank </a><br>
   <a href="index 2.html">Ésto lleva a una página de otro archivo .html de la carpeta</a> ><br>
   <a href="#calculadora">Ir a la calculadora (mismo sitio dentro de la página)</a>
