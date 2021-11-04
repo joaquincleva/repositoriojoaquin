@@ -1,21 +1,49 @@
 body {
     background-color: #FFE6E6;
     max-width: 1024px;
-    margin-left: 210px;
+    margin-top: 79px;
+    margin-left: 180px;
     margin-right: auto;
     text-align: justify;
     line-height: 1.7;
     font-family: Arial, sans-serif;
 
 }
+header{
+    overflow: hidden;
+        margin-left: -20px;
+    position: absolute;
+    background-color: #B30F04;
+    width: 1044px;
+    top: 0;
+    height: 79px;
+}
+.header{
+    float: left;
+      width: 8em;
+      height: 3.8em;
+      margin: 2px;
+      margin-left: 3.8px;
+      padding: 5px;
+      border: black 2px solid;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 nav {
     position: fixed;
-    top: 0;
+    top: -15px;
     left: 0;
-    width: 210px;
+    width: 160px;
     padding-left: 0.2px;
     font-size: 80%;
     text-align: left;
+}
+aside {
+    position: absolute;
+    left: 1204px;
+    top: 79px;
+
 }
 h1 {
     text-align: center;
@@ -48,4 +76,12 @@ p {
         background-color: #EB8882;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
+}
+.estilo-propio2 {
+    padding: 3px 10px;
+    background-color: #FFE6E6;
+}
+.estrella {
+    position: relative;
+    right: 0;
 }
